@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="container">
+       
+        <div class="calculadora"> 
+            <h1 class="titulo">Calculadora</h1>
+        <p class="resultado" id="resultado"> </p>
+            <table>
+                <tr>
+                    <td><button onclick="limpar()">C</button></td>
+                    <td><button onclick="back()"><</button></td>
+                    <td><button onclick="insert('/')">/</button></td>
+                    <td><button onclick="insert('*')">X</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="insert(7)">7</button></td>
+                    <td><button onclick="insert(8)">8</button></td>
+                    <td><button onclick="insert(9)">9</button></td>
+                    <td><button onclick="insert('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="insert(4)">4</button></td>
+                    <td><button onclick="insert(5)">5</button></td>
+                    <td><button onclick="insert(6)">6</button></td>
+                    <td><button onclick="insert('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="insert(1)">1</button></td>
+                    <td><button onclick="insert(2)">2</button></td>
+                    <td><button onclick="insert(3)">3</button></td>
+                    <td rowspan="2"><button onclick="resultar()" style="height: 103px;">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button onclick="insert(0)" style="width: 102.8px;">0</button></td>
+                    <td><button onclick="insert('.')">.</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <div class="logo-footer">
+            <p class="titulo-logo">L 0 H 4 N X</p>
+            <P class="subtitulo-logo">Dev Front-End Junior</P>
+        </div>
+        <div class="redes">
+           <a target="_blank" href="https://www.instagram.com/stf_lohan/"><img class="redeSocial" src="/assets/logo-insta-branca.png" alt="Logo do instagram com link clicavél"></a> 
+            <a target="_blank" href="https://github.com/L0H4NX"><img class="redeSocial" src="/assets/logo-git-branca.png" alt="Logo do github com link clicável"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/steferson-lohan-625945232/"><img class="redeSocial" src="/assets/logo-linkedin-branca.png" alt="Logo do Linkedin com link clicável"></a>
+        </div>
+    </footer>
+</body>
+<script src="javascript.js"></script>
+</html>
